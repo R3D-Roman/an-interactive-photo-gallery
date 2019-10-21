@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Turret Road", cursive;
+  font-size: 1em;
+  background-image: url(../photos/antique-backdrop-background-129731.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  color: red;
+  text-shadow: 7px 0 5px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+input {
+  background-image: url("../photos/icons8-search-property-64.png");
+  background-size: 7%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 55%;
+  padding: 10px;
+  border: 2px dotted black;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.search {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.container {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgSmall {
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.imgSmall:hover {
+  box-shadow: 0 2px 8px 6px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  filter: grayscale(70%);
+  transform: scale(1.1);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+/* LightBox */
+
+#baguetteBox-overlay .full-image img {
+  max-height: 80%;
+}
+
+#baguetteBox-overlay .full-image figcaption {
+  bottom: 3%;
+  background-color: inherit;
+  font-family: "Turret Road", cursive;
+}
+
+/* ======================================Media Query=========================================== */
+
+@media (max-width: 767px) {
+  .col {
+    text-align: center;
+    flex-basis: 30%;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  /* LightBox */
+  #baguetteBox-overlay .full-image img {
+    max-height: 95%;
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 35%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .col {
+    flex-basis: 22%;
+    margin: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .col {
+    flex-basis: 22%;
+    margin: 10px;
+  }
+}
