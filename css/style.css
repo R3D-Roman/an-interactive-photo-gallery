@@ -94,6 +94,7 @@ footer {
   bottom: 3%;
   background-color: inherit;
   font-family: "Turret Road", cursive;
+  padding: .5rem;
 }
 
 /* ======================================Media Query=========================================== */
